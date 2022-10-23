@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import { useEffect } from 'react';
+import { Divider, Header } from 'semantic-ui-react';
 import ItemList from '../src/component/ItemList';
 import styles from '../styles/Home.module.css'
 
@@ -22,7 +23,8 @@ export default function Home() {
   return (
     <div>
     <Head> Home </Head>
-    <div> create-next-app</div>
+    <Header as="h3" style={{paddingTop:40}}>베스트 상품 </Header>
+    <Divider/>
     <ItemList list={list}/>
     </div>
   )
