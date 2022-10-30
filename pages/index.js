@@ -1,5 +1,4 @@
 import Head from 'next/head'
-import Image from 'next/image'
 import { useEffect } from 'react';
 import { Divider, Header } from 'semantic-ui-react';
 import ItemList from '../src/component/ItemList';
