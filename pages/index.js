@@ -10,7 +10,7 @@ export default function Home() {
   const API_URL = 
   "http://makeup-api.herokuapp.com/api/v1/products.json?brand=maybelline";
 
-    const getData = () =>{
+    const getData = () =>{ 
       Axios.get(API_URL).then(res =>{
         console.log(res);
         setList(res.data);
