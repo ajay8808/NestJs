@@ -12,7 +12,7 @@ export default function Home() {
 
     const getData = () =>{ 
       Axios.get(API_URL).then(res =>{
-        console.log(res);
+       
         setList(res.data);
       });
     }
