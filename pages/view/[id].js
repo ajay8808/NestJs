@@ -1,17 +1,18 @@
 import { useRouter } from "next/router"
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 
 
 
 export default function About() {
   const router = useRouter();
   const {id} = router.query;
+  const [data,setData] = useState();
 
   const API_URL = `http://makeup-api.herokuapp.com/api/v1/product/${id}`
   
   function getData() {
     Axios.get(API_URL).then((res)=>{
-      console.log(res.data);
+      setData(res.data);
     });
   }
   useEffect(()=>{
